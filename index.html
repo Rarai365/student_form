@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <!-- form tag is used to inpout user data  -->
+    <form action="" method="" onsubmit="">
+      <!-- html form elements -->
+      <!-- input elements -->
+      <!-- 1: text type -->
+      <p>
+        <label for="name">Name:</label>
+        <input id="name" type="text" required />
+      </p>
+      <p>
+        <label for="phone">Phone Number:</label>
+        <input id="phone" type="number" minlength="10" maxlength="10" />
+        <!-- form validation - only the valid number is submitable -->
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input id="email" type="email" required />
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input id="password" type="password" minlength="5" maxlength="8" />
+      </p>
+
+      <p>
+        <label for="date">DOB:</label>
+        <input id="date" type="date" />
+      </p>
+      <!-- time type -->
+      <p>
+        <label for="time ">Lunch Time:</label>
+        <input id="time" type="time" />
+      </p>
+      <!-- month type  -->
+      <p>
+        <label for="month">Month:</label>
+        <input id="month" type="month" />
+      </p>
+      <!-- week type  -->
+      <p>
+        <label for="week">week:</label>
+        <input id="week" type="week" />
+      </p>
+      <!-- color type -->
+
+      <p>
+        <label for="url">Linkden URL:</label>
+        <input id="url" type="url" />
+      </p>
+      <!-- color type  -->
+      <p>
+        <label for="color">Fav color:</label>
+        <input id="color   " type="color" />
+      </p>
+
+      <p>
+        <label for="file">upload resume:</label>
+        <input id="file " type="file" multiple accept=".pdf, .docx" />
+      </p>
+      <p>
+        <label for="images">Upload Images:</label>
+        <input id="images " type="file" multiple accept="image/*" />
+      </p>
+      <p>
+        <label for="About">About me :</label>
+        <!-- <input id="About" type="textarea" />  instead of type name textarea HTML made an elemnt textarea -->
+        <textarea id="About" cols="8" rows="8"></textarea>
+      </p>
+      <!-- <!radio buttons-->
+      <p>
+        <input id="male" type="radio" name="gender" />
+        <label for="male">Male</label>
+      </p>
+
+      <p>
+        <input id="female " type="radio" name="gender" />
+        <label for="female">Female</label>
+      </p>
+      <hr />
+      <!-- checkbox is used to select multiple answers -->
+      <p>
+        <input id="answer" type="checkbox" name="answer" />
+        <label for="answer">Answer1</label>
+      </p>
+      <p>
+        <input id="answer" type="checkbox" name="answer" />
+        <label for="answer">Answer2</label>
+      </p>
+      <p>
+        <input id="answer" type="checkbox" name="answer" />
+        <label for="answer">Answer3</label>
+      </p>
+      <p>
+        <input id="answer" type="checkbox" name="answer" />
+        <label for="answer">Answer4</label>
+      </p>
+      <!-- dropdown |select list shows list of the options available  -->
+      <select name="language">
+        <option value="">--select--</option>
+        <option value="html">html</option>
+        <option value="CSS">css</option>
+        <option value="JS">js</option>
+        <option value="">react</option>
+      </select>
+      <br />
+      <br />
+      <!-- multiselect -->
+      <select multiple>
+        <option value="">--select--</option>
+        <option value="html">html</option>
+        <option value="CSS">css</option>
+        <option value="JS">js</option>
+        <option value="">react</option>
+      </select>
+      <!-- option group -->
+      <select>
+        <option value="">--select--</option>
+        <optgroup label="Frontend">
+          <option value="html">html</option>
+          <option value="CSS">css</option>
+          <option value="JS">js</option>
+          <option value="react">react</option>
+        </optgroup>
+        <optgroup label="Backend">
+          <option value="ruby">Node</option>
+          <option value="Ruby">Ruby</option>
+        </optgroup>
+      </select>
+
+      <!-- button type -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <button>click me</button>
+  </body>
+</html>

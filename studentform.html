@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+    <link href="studentform.css" rel="stylesheet" />
+  </head>
+  <body>
+    <br /><br />
+    <h1 style="text-align: center">RRR College/School</h1>
+    <h3 style="text-align: center">Student Registration Form</h3>
+
+    <form class="form">
+      <table border="5">
+        <tr>
+          <td>
+            <label for="name">First Name: </label>
+            <input type="text" id="name" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="name">Last Name: </label>
+            <input type="text" id="name" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="DOB">DOB: </label>
+            <input id="date" type="date" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Fname">Father's Name: </label>
+            <input type="text" id="Fname" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Mname">Mother's Name: </label>
+            <input type="text" id="Mname" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender">Gender:</label>
+            <input id="male" type="radio" name="gender" />
+            <label for="male">Male</label>
+            <input id="female " type="radio" name="gender" />
+            <label for="female">Female</label>
+            <input id="others" type="radio" name="gender" />
+            <label for="others">Others</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Level">Level:</label>
+            <select name="level">
+              <option value="">--select--</option>
+              <option value="Primary school">Primary School</option>
+              <option value="Secondary School">Secondary School</option>
+              <option value="high school">High School</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Department">Department:</label>
+            <select name="Department">
+              <option value="">--select--</option>
+              <optgroup label="Enginneering">
+                <option value="Electrical Enginneering">
+                  Electrical Enginneering
+                </option>
+                <option value="civil Enginneering">civil Enginneering</option>
+                <option value="Mechanical Enginneering">
+                  Mechanical Enginneering
+                </option>
+              </optgroup>
+              <optgroup label="Medicine and Health">
+                <option value="pharmacy">pharmacy</option>
+                <option value="Physiotherapy">Physiotherapy</option>
+                <option value="nursing">nursing</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="number">Phone Number:</label>
+            <input id="number" type="number" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="images">Profile Pic:</label>
+            <input
+              id="images "
+              type="file"
+              multiple
+              accept="image/*"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">
+            <button type="Submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
